@@ -220,8 +220,51 @@ Area Code
 123           Joan       Jet  Desert City    CO   68000
 ```
 
+# openpyxl
+首先不要忘记导入模块。
+```python
+from openpyxl.workbook import Workbook
+from openpyxl import load_workbook
+```
+编号| 内容| 方法
+---|---|---
+1000| 创建新的sheet，并指定顺序|  create_sheet('NewSheet1', 0)
+1001| 导入一个excel|  load_workbook('regions.xlsx')
+1002| 替换一个cell的值| active_sheet['A1'] = 'New_value'
+1003| 保存更改为一个新的Excel| wb2.save('New_regions.xlsx')
 
+```python
+from openpyxl import load_workbook
 
+wb = Workbook()
+ws = wb.active
+
+ws1 = wb.create_sheet('NewSheet')
+ws2 = wb.create_sheet('NewSheet1', 0)     #1000 创建一个新的sheet，并指定顺序
+
+ws.title = 'MySheet'
+
+print(wb.sheetnames)    #结果：['NewSheet1', 'MySheet', 'NewSheet']
+```
+```python
+wb2 = load_workbook('regions.xlsx')   #1001 导入一个excel
+
+new_sheet = wb2.create_sheet('NewNewSheet')   #创建一个新的sheet
+
+active_sheet = wb2.active
+
+cell = active_sheet['A1']
+
+print(cell)
+print(cell.value)
+
+active_sheet['A1'] = 'New_value'      #1002 替换一个cell的值
+print(cell.value)
+
+wb2.save('New_regions.xlsx')          #1003 保存更改为一个新的Excel
+
+print(pd.read_excel('New_regions.xlsx'))
+```
 
 
 
