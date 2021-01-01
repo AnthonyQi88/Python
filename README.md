@@ -41,4 +41,20 @@ We can also check if values are greater than or lesser than each other using > a
 We can make very complex comparisons by joining statements together using logical operators with our comparison operators. These logical operators are and, or, and not. When using the and operator, both sides of the statement being evaluated must be true for the whole statement to be true. When using the or operator, if either side of the comparison is true, then the whole statement is true. Lastly, the not operator simply inverts the value of the statement immediately following it. So if a statement evaluates to True, and we put the not operator in front of it, it would become False.
 
 
+## Conditionals Cheat Sheet
+In earlier videos, we took a look at some of the built-in Python operators that allow us to compare values, and some logical operators we can use to combine values. We also learned how to use operators in if-else-elif blocks. 
+
+It’s a lot to learn but, with practice, it gets easier to remember it all. In the meantime, this handy cheat sheet gives you all the information you need at a glance. 
+
+Comparison operators
+a == b: a is equal to b
+a != b: a is different than b
+a < b: a is smaller than b
+a <= b: a is smaller or equal to b
+a > b: a is bigger than b
+a >= b: a is bigger or equal to b
+Logical operators
+a and b: True if both a and b are True. False otherwise.
+a or b: True if either a or b or both are True. False if both are False.
+not a: True if a is False, False if a is True.
 
