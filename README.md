@@ -149,3 +149,26 @@ You can use the format method on strings to concatenate and format strings in al
 If the curly brackets are empty, they’ll be populated with the variables passed in the order in which they're passed. However, you can put certain expressions inside the curly brackets to do even more powerful string formatting operations. You can put the name of a variable into the curly brackets, then use the names in the parameters. This allows for more easily readable code, and for more flexibility with the order of variables.
 
 You can also put a formatting expression inside the curly brackets, which lets you alter the way the string is formatted. For example, the formatting expression {:.2f} means that you’d format this as a float number, with two digits after the decimal dot. The colon acts as a separator from the field name, if you had specified one. You can also specify text alignment using the greater than operator: >. For example, the expression {:>3.2f} would align the text three spaces to the right, as well as specify a float number with two decimal places. String formatting can be very handy for outputting easy-to-read textual output.
+
+
+## String Reference Cheat Sheet
+String Reference Cheat Sheet
+In Python, there are a lot of things you can do with strings. In this cheat sheet, you’ll find the most common string operations and string methods.
+
+String operations
+len(string) Returns the length of the string
+for character in string Iterates over each character in the string
+if substring in string Checks whether the substring is part of the string
+string[i] Accesses the character at index i of the string, starting at zero
+string[i:j] Accesses the substring starting at index i, ending at index j-1. If i is omitted, it's 0 by default. If j is omitted, it's len(string) by default.
+String methods
+string.lower() / string.upper() Returns a copy of the string with all lower / upper case characters
+string.lstrip() / string.rstrip() / string.strip() Returns a copy of the string without left / right / left or right whitespace
+string.count(substring) Returns the number of times substring is present in the string
+string.isnumeric() Returns True if there are only numeric characters in the string. If not, returns False.
+string.isalpha() Returns True if there are only alphabetic characters in the string. If not, returns False.
+string.split() / string.split(delimiter) Returns a list of substrings that were separated by whitespace / delimiter
+string.replace(old, new) Returns a new string where all occurrences of old have been replaced by new.
+delimiter.join(list of strings) Returns a new string with all the strings joined by the delimiter 
+Check out the official documentation for all available String methods.  
+
