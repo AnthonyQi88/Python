@@ -162,6 +162,7 @@ String operations
 * if substring in string Checks whether the substring is part of the string
 * string[i] Accesses the character at index i of the string, starting at zero
 * string[i:j] Accesses the substring starting at index i, ending at index j-1. If i is omitted, it's 0 by default. If j is omitted, it's len(string) by default.
+
 String methods
 * string.lower() / string.upper() Returns a copy of the string with all lower / upper case characters
 * string.lstrip() / string.rstrip() / string.strip() Returns a copy of the string without left / right / left or right whitespace
