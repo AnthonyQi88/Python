@@ -401,4 +401,5 @@ dict.update(other_dictionary) - Updates the dictionary with the items coming fro
 dict.clear() - Removes all the items of the dictionary
 Check out the official documentation for dictionary operations and methods.  
 
-
+## Object-Oriented Programming Defined
+In object-oriented programming, concepts are modeled as classes and objects. An idea is defined using a class, and an instance of this class is called an object. Almost everything in Python is an object, including strings, lists, dictionaries, and numbers. When we create a list in Python, we’re creating an object which is an instance of the list class, which represents the concept of a list. Classes also have attributes and methods associated with them. Attributes are the characteristics of the class, while methods are functions that are part of the class.
